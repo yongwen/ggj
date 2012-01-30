@@ -170,13 +170,13 @@ var Player = cocos.nodes.Node.extend({
 	
 	playStopEffect: function() {
 	    console.log('stop.play');
-        var snd = new Audio("/__jah__/resources/stop.wav");
+        var snd = new Audio("assets/resources/stop.wav");
         snd.play();
     },
 
 	playDeadEffect: function() {
 	    console.log('dead.play');
-        var snd = new Audio("/__jah__/resources/dead.wav");
+        var snd = new Audio("assets/resources/dead.wav");
         snd.play();
     },
                   
@@ -527,7 +527,7 @@ var SnakeChase = cocos.nodes.Layer.extend(/** @lends Snake-chase# */{
         scene.addChild({child: next});
         
         console.log('levelup.play');
-        var snd = new Audio("/__jah__/resources/levelup.wav");
+        var snd = new Audio("assets/resources/levelup.wav");
         snd.play();
         
         director.replaceScene(scene);
@@ -1436,7 +1436,7 @@ var Food = cocos.nodes.Node.extend({
                 this.get('parent').removeFood(this);
                 
                 console.log('pickup.play');
-                var snd = new Audio("/__jah__/resources/pickup.wav");
+                var snd = new Audio("assets/resources/pickup.wav");
                 snd.play();
                 //var parent = this.get('parent');
                 console.log('got parent');
